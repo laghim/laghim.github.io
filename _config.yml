@@ -14,10 +14,12 @@ author:
     name: "Laura Ghimpeteanu"
 
 social_links:
-    - title: Find me on GitHub
+    title: Find me on GitHub
     icon: github
     url: "https://github.com/laghim"
-    - title: Find me on LinkedIn
+    title: Find me on LinkedIn
     icon: linkedin
     url: "https://linkedin.com/laghim"
+    
+hide_site_feed_link: true
 
