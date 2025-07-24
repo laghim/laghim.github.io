@@ -8,7 +8,7 @@ url: "https://laghim.github.io"
 permalink: pretty
 future: true
 
-
+excerpt_separator: "<!--more-->"
 
 
 
