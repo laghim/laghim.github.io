@@ -4,17 +4,13 @@ title: "Secure third‑party access with Azure Private Link and reduce supply-ch
 date: 2025-07-24 12:00:00 +0000
 ---
 
-# Secure third‑party access with Azure Private Link and reduce supply-chain attack risks
+_[**Azure Private Link**](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment._
 
-A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”
+<!--more-->
 
-More details about how a supply chain attack is carried out or common types can be found here: [What is a supply chain attack? | Cloudflare](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/)
+A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”  More details about how a supply chain attack is carried out or common types can be found here: [What is a supply chain attack? | Cloudflare](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/)
 
 ![supplychainattack](../assets/images/supplychainattack.png)
-
-
-
-[**Azure Private Link**](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment.
 
 
 
@@ -107,7 +103,8 @@ Microsoft’s stance is that Zero Trust principles should extend to third-party 
 
 ![nevertrust](../assets/images/nevertrust.png)
 
-## Other resources on supply-chain-attacks
+### Other resources on supply-chain-attacks
 
-- Supply chain attacks — Microsoft Defender for Endpoint | Microsoft Learn*](https://learn.microsoft.com/en-us/defender-endpoint/malware/supply-chain-malware)
-- [*Supply chain attacks | Latest Threats | Microsoft Security Blog*](https://www.microsoft.com/en-us/security/blog/threat-intelligence/supply-chain-attacks/)
+- Supply chain attacks — Microsoft Defender for Endpoint | Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/malware/supply-chain-malware)
+- [Supply chain attacks | Latest Threats | Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/threat-intelligence/supply-chain-attacks/)
+
