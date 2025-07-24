@@ -5,7 +5,11 @@ date: 2025-07-24 12:00:00 +0000
 categories: [blog]
 ---
 
-[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment.<!--more-->A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”   
+[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment.
+
+<!--more-->
+
+A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”   
 
 ![supplychainattack](/assets/images/supplychainattack.png)
 
