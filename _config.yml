@@ -1,13 +1,11 @@
 title: Laura's cloud security blog
 description: Sharing interesting topics about cybersecurity and cloud security
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-remote-theme
+theme: minima
+
   
 #Optional
 url: "https://laghim.github.io"
 permalink: pretty
-theme: minima
 future: true
 
 
