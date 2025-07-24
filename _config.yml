@@ -10,16 +10,11 @@ future: true
 
 excerpt_separator: "<!--more-->"
 
-author:
-    name: "Laura Ghimpeteanu"
+author: "Laura Ghimpeteanu"
 
-social_links:
-    title: Find me on GitHub
-    icon: github
-    url: "https://github.com/laghim"
-    title: Find me on LinkedIn
-    icon: linkedin
-    url: "https://linkedin.com/laghim"
+show_excerpts: true
     
 hide_site_feed_link: true
 
+nav_pages:
+    - about.md
