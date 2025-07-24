@@ -104,8 +104,3 @@ Microsoft’s stance is that Zero Trust principles should extend to third-party 
 
 ![nevertrust](/assets/images/nevertrust.png)
 
-### Other resources on supply-chain-attacks
-
-- Supply chain attacks — Microsoft Defender for Endpoint | Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/malware/supply-chain-malware)
-- [Supply chain attacks | Latest Threats | Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/threat-intelligence/supply-chain-attacks/)
-

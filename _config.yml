@@ -1,5 +1,6 @@
 title: Cloud Security with VNetLady
-description: Sharing interesting topics about cybersecurity and cloud security
+description: >
+    Sharing interesting topics about cybersecurity and cloud security
 theme: minima
   
 #Optional
@@ -8,4 +9,15 @@ permalink: pretty
 future: true
 
 excerpt_separator: "<!--more-->"
+
+author:
+    name: "Laura Ghimpeteanu"
+
+social_links:
+    - title: Find me on GitHub
+    icon: github
+    url: "https://github.com/laghim"
+    - title: Find me on LinkedIn
+    icon: linkedin
+    url: "https://linkedin.com/laghim"
 
