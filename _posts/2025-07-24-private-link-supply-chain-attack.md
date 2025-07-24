@@ -4,7 +4,7 @@ title: "Secure third‑party access with Azure Private Link and reduce supply-ch
 date: 2025-07-24 12:00:00 +0000
 ---
 
-_[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment._
+[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment._
 
 <!--more-->
 
