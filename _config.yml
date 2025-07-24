@@ -11,18 +11,10 @@ future: true
 excerpt_separator: "<!--more-->"
 
 author: "Laura Ghimpeteanu"
+linkedin: "https://linkedin.com/in/laghim"
 
 show_excerpts: true
 
-#nav_pages:
-  #  - about.md
+nav_pages:
+  - about.md
 
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Laura Ghimpeteanu
-  links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/laghim # change to your GitHub homepage
-    # Uncomment below to add more social links
-    - https://linkedin.com/in/laghim

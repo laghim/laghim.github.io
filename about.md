@@ -1,10 +1,5 @@
-
-
-Name
-
-Photo
-
-Job 
-
-Experience
-
+---
+layout: page
+title: About
+permalink: /about/
+---
