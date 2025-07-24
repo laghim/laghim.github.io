@@ -3,13 +3,6 @@ layout: home
 title: Home
 ---
 
-Welcome to my site! Here's what's new:
+Welcome to my blog!
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-    </li>
-  {% endfor %}
-</ul>
-
+Below are my posts:
