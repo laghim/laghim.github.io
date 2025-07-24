@@ -2,8 +2,7 @@
 ​---
 layout: post
 title: "Secure third‑party access with Azure Private Link and reduce supply-chain attack risks"
-date: 2025-07-24 
-categories: blog
+date: 2025-07-24 12:00:00 +0000
 ​---
 ---
 

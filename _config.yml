@@ -1,6 +1,14 @@
 title: Laura's cloud security blog
 description: Sharing interesting topics about cybersecurity and cloud security 
+
 theme: minima
+future: true
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 # Optional: include your info
 author:
@@ -11,3 +19,5 @@ minima:
   social_links:
     github: lag him
     linkedin: https://linkedin.com/laghim
+    
+
