@@ -8,9 +8,7 @@ _[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/priva
 
 <!--more-->
 
-A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”  
-
-More details about how a supply chain attack is carried out or common types can be found [here](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/).
+A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”   
 
 ![supplychainattack](/assets/images/supplychainattack.png)
 
