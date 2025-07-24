@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><br></p>
+<p class="p2">---</p>
+<p class="p2">layout: base</p>
+<p class="p2">---</p>
+<p class="p2">&lt;article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;header class="post-header"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;h1 class="post-title p-name" itemprop="name headline"&gt;{{ page.title | escape }}&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="post-meta"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{% assign pdate = page.date | date_to_xmlschema %}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- if page.modified_date %}&lt;span class="meta-label"&gt;Published:&lt;/span&gt;{% endif %}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;time class="dt-published" datetime="{{ pdate }}" itemprop="datePublished"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>{{ pdate | date: date_format }}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/time&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- if page.modified_date -%}</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;span class="bullet-divider"&gt;•&lt;/span&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;span class="meta-label"&gt;Updated:&lt;/span&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>{%- assign mdate = page.modified_date | date_to_xmlschema %}</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>{{ mdate | date: date_format }}</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/time&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- endif -%}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- if page.author %}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div class="{% unless page.modified_date %}force-inline {% endunless %}post-authors"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>{%- for author in page.author %}</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;span itemprop="author" itemscope itemtype="http://schema.org/Person"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;span class="p-author h-card" itemprop="name"&gt;{{ author }}&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>{%- if forloop.last == false %}, {% endif -%}</p>
+<p class="p2"><span class="Apple-converted-space">        </span>{% endfor %}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- endif %}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div class="post-content e-content" itemprop="articleBody"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>{{ content }}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>{% if jekyll.environment == 'production' -%}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>{% if page.comments == false -%}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="comments-disabled-message"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>Comments have been disabled for this post.</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>{% else -%}</p>
+<p class="p2"><span class="Apple-converted-space">      </span>{%- include comments.html -%}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>{% endif -%}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>{% endif -%}</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;a class="u-url" href="{{ page.url | relative_url }}" hidden&gt;&lt;/a&gt;</p>
+<p class="p2">&lt;/article&gt;</p>
+</body>
+</html>
