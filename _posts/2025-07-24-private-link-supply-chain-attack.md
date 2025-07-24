@@ -4,13 +4,15 @@ title: "Secure third‑party access with Azure Private Link and reduce supply-ch
 date: 2025-07-24 12:00:00 +0000
 ---
 
-_[**Azure Private Link**](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment._
+_[Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) (together with [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)) offers a way to expose a service privately, without a public internet endpoint. This is appealing for minimizing exposure, but it raises the question: **What if the trusted vendor itself is breached?** Supply chain attacks are a serious concern. In such attacks, a malicious actor exploits the trust and access given to a third-party to penetrate the primary target’s environment._
 
 <!--more-->
 
-A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”  More details about how a supply chain attack is carried out or common types can be found here: [What is a supply chain attack? | Cloudflare](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/)
+A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”  
 
-![supplychainattack](../assets/images/supplychainattack.png)
+More details about how a supply chain attack is carried out or common types can be found [here](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/).
+
+![supplychainattack](/assets/images/supplychainattack.png)
 
 
 
@@ -30,7 +32,7 @@ In summary, Private Endpoints provide a *private, isolated connection* to an Azu
 
 However, *private* doesn’t automatically mean *safe*. It protects against external scans and direct internet attacks, but what if the “trusted” side (the vendor) is where the threat comes from?
 
-![supplychainattack-pe](../assets/images/supplychainattack-pe.png)
+![supplychainattack-pe](/assets/images/supplychainattack-pe.png)
 
 Compromised third-party vendor with secure access to an Azure service
 
@@ -50,7 +52,7 @@ Even with a Private Endpoint in place, one must plan for the worst-case scenario
 
   >  It’s important to note that network access is not the only defense for the resource. Azure services will still enforce their normal authentication/authorization.*
 
-![networkindentity](../assets/images/networkindentity.png)
+![networkindentity](/assets/images/networkindentity.png)
 
 For example, an Azure SQL DB will require valid [SQL credentials/Entra token](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql&tabs=azure-portal); a Storage Account will require keys or [SAS token](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) or[ Entra auth](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory). *Ideally, the vendor was given its own limited credentials to the resource.* If those credentials are compromised along with the machine, the attacker can then query data or perform operations as that vendor. However, if the vendor’s credentials are separate and not stored on that machine (or use MFA), the attacker *might have network access but no valid credentials to login to the resource.* This is why **identity security matters as much as network security.**
 
@@ -101,7 +103,7 @@ In essence, **do not implicitly trust the vendor’s network just because it con
 
 Microsoft’s stance is that Zero Trust principles should extend to third-party access: *assume breach* (the vendor might get breached), so limit what that breach can do (*least privilege & network segmentation*) and have detections in place.
 
-![nevertrust](../assets/images/nevertrust.png)
+![nevertrust](/assets/images/nevertrust.png)
 
 ### Other resources on supply-chain-attacks
 
