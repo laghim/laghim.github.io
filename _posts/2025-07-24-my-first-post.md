@@ -1,9 +1,7 @@
 ---
-​---
 layout: post
 title: "My First Post"
 date: 2025-07-24 12:00:00 +0000
-​---
 ---
 
 # Secure third‑party access with Azure Private Link and reduce supply-chain attack risks
