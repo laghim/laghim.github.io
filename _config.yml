@@ -1,5 +1,13 @@
-title: My Site
-description: A sample Jekyll site
-remote_theme: pages-themes/cayman
-plugins:
-  - jekyll-remote-theme
+title: Laura's cloud security blog
+description: Sharing interesting topics about cybersecurity and cloud security 
+theme: minima
+
+# Optional: include your info
+author:
+  name: Laura Ghimpeteanu
+
+# Optional: social links
+minima:
+  social_links:
+    github: lag him
+    linkedin: https://linkedin.com/laghim

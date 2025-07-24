@@ -1,10 +1,15 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
-# Welcome to my site
+Welcome to my site! Here's what's new:
 
-## This is my PoC website for writing technical articles. 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
 
-[Visit my blog](./blog)
