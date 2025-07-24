@@ -7,4 +7,4 @@ title: Home
 
 ## This is my PoC website for writing technical articles. 
 
-> this is an .md file --> to update later for homepage
+[Visit my blog](./blog)
