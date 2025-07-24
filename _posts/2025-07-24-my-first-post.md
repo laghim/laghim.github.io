@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "My First Post"
+title: "Secure third‑party access with Azure Private Link and reduce supply-chain attack risks"
 date: 2025-07-24 12:00:00 +0000
 ---
 
 # Secure third‑party access with Azure Private Link and reduce supply-chain attack risks
-
-
 
 A **supply-chain attack** is a cyberattack that exploits vulnerabilities in the software or hardware provided by a third-party vendor to compromise a target organization. Instead of directly attacking the target, attackers infiltrate the supply chain to access systems and data, often through compromised software updates or malicious components. These attacks can be also known as “value-chain attacks” or “third-party attacks.”
 

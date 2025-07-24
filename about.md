@@ -1,3 +1,10 @@
-This is the About Me page. 
-TBD
+
+
+Name
+
+Photo
+
+Job 
+
+Experience
 

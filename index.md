@@ -3,6 +3,8 @@ layout: home
 title: Home
 ---
 
-Welcome to my blog!
+Welcome to my blog! 
 
-Below are my posts:
+My name is Laura and I'm a Security Cloud Solution Architect at Microsoft.  
+
+Check what's new and interesting in my work line. 
